@@ -8,7 +8,7 @@
 
 .kanbas-nav,
 .account-navigation,
-.profile {
+.edit-profile {
   flex-grow: 1;
   padding: 0; 
   background-color: white; 
@@ -122,3 +122,80 @@
 }
 
 
+/* Edit Profile styles */
+.edit-profile .account-icon {
+  margin-right: 10px;
+  vertical-align: middle;
+  color: grey;
+}
+
+.edit-profile h2 {
+  text-align: left;
+}
+
+.edit-profile .mb-3 {
+  margin-bottom: 20px;
+}
+
+.edit-profile .btn-primary,
+.edit-profile .btn-secondary {
+  background-color: lightgray;
+  color: black;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.edit-profile .btn-primary:hover,
+.edit-profile .btn-primary:focus,
+.edit-profile .btn-secondary:hover,
+.edit-profile .btn-secondary:focus {
+  background-color: red;
+  color: white;
+}
+
+.edit-profile .btn i.fas.fa-pencil-alt {
+  margin-right: 5px;
+}
+
+.edit-profile .form-text i.fas.fa-external-link-alt {
+  margin-left: 5px;
+}
+
+.edit-profile .form-text a .fa-link {
+  color: grey;
+}
+
+.edit-profile .no-underline-red {
+  text-decoration: none;
+  color: red;
+}
+
+.edit-profile .container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.edit-profile .left-column {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.edit-profile .right-column {
+  align-self: flex-start;
+}
+
+.edit-profile .btn-save-profile {
+  background-color: red;
+  color: white;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.edit-profile .btn-save-profile:hover,
+.edit-profile .btn-save-profile:focus {
+  background-color: red;
+  color: white;
+}
