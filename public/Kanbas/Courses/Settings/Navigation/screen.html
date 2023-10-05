@@ -1,67 +1,150 @@
-<table width="100%" border="1">
-  <tr>
-    <td valign="top">
-      <ul>
-        <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-        <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-        <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-        <!-- Add a space line -->
-        <li></li>
-        <li><a href="#">Calendar</a></li>
-        <li><a href="#">Inbox</a></li>
-        <li><a href="#">History</a></li>
-        <li><a href="#">Studio</a></li>
-        <li><a href="#">Commons</a></li>
-        <li><a href="#">Help</a></li>
-      </ul>
-    </td>
-    <td valign="top">
-<ul>
-  <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-  <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
-  <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
-  <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
-  <!-- Add a space line -->
-  <li></li>
-  <li><a href="#">Piazza</a></li>
-  <li><a href="#">Zoom Meetings</a></li>
-  <li><a href="#">Quizzes</a></li>
-  <li><a href="#">People</a></li>
-  <li><a href="#">Panopto Video</a></li>
-  <li><a href="#">Discussions</a></li>
-  <li><a href="#">Announcements</a></li>
-  <li><a href="#">Pages</a></li>
-  <li><a href="#">Files</a></li>
-  <li><a href="#">Rubrics</a></li>
-  <li><a href="#">Outcomes</a></li>
-  <li><a href="#">Collaborations</a></li>
-  <li><a href="#">Syllabus</a></li>
-  <li><a href="#">Settings</a></li>
-</ul>
-    </td>
-    <td valign="top">
-      <p>Drag and drop items to reorder them in the course navigation.</p>
-      <ul>
-        <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-        <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
-        <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
-        <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
-        <li><a href="#">Piazza</a></li>
-        <li><a href="#">Zoom Meetings</a></li>
-        <li><a href="#">Quizzes</a></li>
-        <li><a href="#">People</a></li>
-        <li><a href="#">Panopto Video</a></li>
-      </ul>
-      <p>Drag items here to hide them from students.</p>
-      <ul>
-        <li><a href="#">Chat</a></li>
-        <li><a href="#">SCORM</a></li>
-        <li><a href="#">Attendance</a></li>
-        <li><a href="#">Barnes and Noble Bookstore</a></li>
-        <li><a href="#">Digication</a></li>
-        <li><a href="#">Top Hat</a></li>
-      </ul>
-      <a href="/Kanbas/Courses/Settings/screen.html"><button>Save</button></a>
-    </td>
-  </tr>
-</table>
+<link href="../../../../vendors/fontawesome/css/all.css" rel="stylesheet" />
+<link href="../../../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<link href="index.css" rel="stylesheet" />
+
+
+<div class="container-fluid"> <!-- Use container-fluid for full-width layout -->
+  <div class="row">
+    <!-- Left Column (Kanbas Nav) -->
+    <div class="col-md-2 p-0"> <!-- Add p-0 class to remove padding -->
+      <div class="kanbas-nav">
+        <div class="list-group wd-kanbas-navigation">
+          <a href="/Kanbas/Account/Profile/screen.html" class="list-group-item list-group-item-action account-link">
+            <i class="fa fa-user" style="color:lightgrey;"></i> Account
+          </a>
+          <a href="/Kanbas/Dashboard/screen.html" class="list-group-item list-group-item-action">
+            <i class="far fa-chart-bar"></i> Dashboard
+          </a>
+          <a href="/Kanbas/Courses/Home/screen.html" class="list-group-item list-group-item-action">
+            <i class="fa fa-book"></i> Courses
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <i class="far fa-calendar-alt"></i> Calendar
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <i class="fa fa-inbox"></i> Inbox
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <i class="fa fa-history"></i> History
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <i class="fa fa-film"></i> Studio
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <i class="fa fa-share"></i> Commons
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <i class="far fa-question-circle" style="font-size: 2.7em"></i> Help
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Middle Column (Course Navigation) -->
+    <div class="col-md-3 p-0">
+      <div class="course-nav" style="margin-top: 10px;">
+        <div class="list-group">
+          <a href="/Kanbas/Courses/Home/screen.html" class="list-group-item list-group-item-action">Home</a>
+          <a href="/Kanbas/Courses/Modules/screen.html" class="list-group-item list-group-item-action">Modules</a>
+          <a href="/Kanbas/Courses/Assignments/screen.html"
+            class="list-group-item list-group-item-action">Assignments</a>
+          <a href="/Kanbas/Courses/Grades/screen.html" class="list-group-item list-group-item-action">Grades</a>
+          <a href="/Kanbas/Courses/Settings/screen.html" class="list-group-item list-group-item-action">Settings</a>
+          <a href="#" class="list-group-item list-group-item-action">Piazza</a>
+          <a href="#" class="list-group-item list-group-item-action">Zoom Meetings</a>
+          <a href="#" class="list-group-item list-group-item-action">Quizzes</a>
+          <a href="#" class="list-group-item list-group-item-action">People</a>
+          <a href="#" class="list-group-item list-group-item-action">Panopto Video</a>
+          <a href="#" class="list-group-item list-group-item-action">Discussions</a>
+          <a href="#" class="list-group-item list-group-item-action">Announcements</a>
+          <a href="#" class="list-group-item list-group-item-action">Pages</a>
+          <a href="#" class="list-group-item list-group-item-action">Files</a>
+          <a href="#" class="list-group-item list-group-item-action">Rubrics</a>
+          <a href="#" class="list-group-item list-group-item-action">Outcomes</a>
+          <a href="#" class="list-group-item list-group-item-action">Collaborations</a>
+          <a href="#" class="list-group-item list-group-item-action">Syllabus</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column (Modules) -->
+    <div class="col-md-7">
+      <div class="course-settings-navigation">
+        <p style="margin-left: 20px;">
+          </style>Drag and drop items to reorder them in the course navigation.</p>
+        <div class="list-group">
+          <a href="#" class="list-group-item ">Home</a>
+          <a href="#" class="list-group-item list-group-item-action">Modules<i class="fas fa-ellipsis-v"></i></a>
+          <a href="#" class="list-group-item list-group-item-action">Piazza<i class="fas fa-ellipsis-v"></i></a>
+          <a href="#" class="list-group-item list-group-item-action">Zoom Meetings<i class="fas fa-ellipsis-v"></i></a>
+          <a href="#" class="list-group-item list-group-item-action">Assignments<i class="fas fa-ellipsis-v"></i></a>
+          <a href="#" class="list-group-item list-group-item-action">Quizzes<i class="fas fa-ellipsis-v"></i></a>
+          <a href="#" class="list-group-item list-group-item-action">Grades<i class="fas fa-ellipsis-v"></i></a>
+          <a href="#" class="list-group-item list-group-item-action">People<i class="fas fa-ellipsis-v"></i></a>
+          <a href="#" class="list-group-item list-group-item-action">Panopto Video<i class="fas fa-ellipsis-v"></i></a>
+        </div><br />
+      
+        <p style="margin-left: 20px;">
+          </style>Drag items here to hide them from students.</p>
+        <p style="margin-left: 20px; font-size: smaller;">
+          </style>Disabling most pages will cause students who visit those pages to be redirected t othe course home page.</p>
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action d-flex">
+            <div class="flex-fill">
+              <p>Chat</p>
+              <p class="text-muted" style="margin-left: 10px; font-size: smaller;">Page disabled, won't appear in navigation
+              </p>
+            </div><i class="fas fa-ellipsis-v align-self-center"></i>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action d-flex">
+            <div class="flex-fill">
+              <p>SCROM</p>
+              <p class="text-muted" style="margin-left: 10px; font-size: smaller;">Page disabled, won't appear in navigation
+              </p>
+            </div><i class="fas fa-ellipsis-v align-self-center"></i>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action d-flex">
+            <div class="flex-fill">
+              <p>Attendance</p>
+              <p class="text-muted" style="margin-left: 10px; font-size: smaller;">Page disabled, won't appear in navigation
+              </p>
+            </div><i class="fas fa-ellipsis-v align-self-center"></i>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action d-flex">
+            <div class="flex-fill">
+              <p>Barnes and Noble Bookstore</p>
+              <p class="text-muted" style="margin-left: 10px; font-size: smaller;">Page disabled, won't appear in navigation
+              </p>
+            </div><i class="fas fa-ellipsis-v align-self-center"></i>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action d-flex">
+            <div class="flex-fill">
+              <p>Digication</p>
+              <p class="text-muted" style="margin-left: 10px; font-size: smaller;">Page disabled, won't appear in navigation
+              </p>
+            </div><i class="fas fa-ellipsis-v align-self-center"></i>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action d-flex">
+            <div class="flex-fill">
+              <p>Top Hat</p>
+              <p class="text-muted" style="margin-left: 10px; font-size: smaller;">Page disabled, won't appear in navigation
+              </p>
+            </div><i class="fas fa-ellipsis-v align-self-center"></i>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action d-flex">
+            <div class="flex-fill">
+              <p>Syllabus</p>
+              <p class="text-muted" style="margin-left: 10px; font-size: smaller;">Page disabled, won't appear in navigation
+              </p>
+            </div><i class="fas fa-ellipsis-v align-self-center"></i>
+          </a>
+        </div><br />
+      
+        <div class="d-flex justify-content-start">
+          <a href="/Kanbas/Account/Profile/screen.html" class="btn btn-danger text-white" style="margin-left: 20px;">Save</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

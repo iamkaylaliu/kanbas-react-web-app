@@ -1,90 +1,200 @@
-  /* Add left and right margin to the form */
-  .list-group {
-      margin: 0 20px;
-      /* Adjust the margin as needed */
-  }
+/* Outer Flex Container styles */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
 
-  /* Add additional styling for the headers (Week0, Week1) */
-  .list-group-item-secondary {
-      font-weight: bold;
-      display: flex;
-      align-items: center;
-      padding-left: 10px;
-      text-decoration: None;
-      height: 35px;
-  }
-
-  /* Apply text indentation to specified items */
-  .list-group-item {
-      padding-left: 20px;
-      padding-right: 0;
-      align-items: center;
-      /* Adjust the indentation as needed */
-  }
+.kanbas-nav,
+.course-nav,
+.course-settings-navigation {
+  flex-grow: 1;
+  padding: 0;
+  background-color: white;
+  margin: 0 ;
+  box-sizing: border-box;
+}
 
 
+/* Kanbas Navigation Sidebar styles */
+.kanbas-nav .wd-kanbas-navigation,
+.kanbas-nav .list-group {
+  background-color: black;
+  list-style: none;
+  padding: 0px;
+  width: 80px;
+  margin: 0px;
+  font-family: Arial, sans-serif;
+}
 
-  /* Apply text indentation to specified items */
-  .list-group-item-action {
-      padding-left: 20px;
-      /* Adjust the indentation as needed */
-  }
+.kanbas-nav .wd-kanbas-navigation li,
+.kanbas-nav .list-group-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 0.8em;
+  text-align: center;
+}
 
-  /* Add additional styling for the headers (Week0, Week1) */
-  .list-group-item-secondary {
-      font-weight: bold;
-      /* Make headers bold */
-      padding-left: 10px;
-      text-decoration: None;
-  }
+.kanbas-nav .wd-kanbas-navigation li.wd-active {
+  background-color: white;
+}
 
-  .list-group-item .flex-fill p {
-    margin: 0;
-    padding: 0;
-  }
+.kanbas-nav .wd-kanbas-navigation li.wd-active a {
+  color: red;
+}
 
-  .fa-check-circle {
-    color: green; 
-    margin-left: auto; /* Push the icon to the rightmost end */
-    margin-right: 20px; 
-    float: right;
-  }
+.kanbas-nav .wd-kanbas-navigation a {
+  color: white;
+  text-decoration: none;
+}
 
-  /* Style the plus icon */
-.fas.fa-plus {
-    color: grey; /* Set the plus icon color (change as needed) */
-    margin-right: 20px; /* Add some spacing to the right of the icon */
+.kanbas-nav .wd-kanbas-navigation a i {
+  color: red;
+  font-size: 2em;
+  margin-bottom: 5px;
+}
 
-  }
-  
-  /* Style the vertical dots icon */
-  .fas.fa-ellipsis-v {
-    color: black; /* Set the vertical dots icon color (change as needed) */
-    margin-right: 20px; /* Add some spacing to the right of the icon */
-    float: right;
-  }
+.kanbas-nav .list-group-item.active {
+  color: red;
+  background-color: white;
+}
 
-  .link-item .fas.fa-link {
-    color: green; /* Set the link icon color to green */
-    margin-right: 10px; /* Add some spacing to the right of the icon */
-  }
-  
-  /* Style the external link icon on the right */
-  .link-item .fas.fa-external-link-alt {
-    padding-left: 5px;
-    color: red; /* Set the external link icon color to red */
-    text-decoration: none; /* Remove underline from the external link icon */
-  }
+.kanbas-nav .list-group-item {
+  color: white;
+  background-color: black;
+  border: none;
+}
 
-  .slides-text {
-    color: red; /* Set the text color to red */
-    padding-left: 20px;
-  }
+.kanbas-nav .list-group-item:hover,
+.kanbas-nav .list-group-item:focus {
+  background-color: white;
+  color: red;
+}
 
-  .nav-tabs .nav-item .nav-link {
-    color: red; /* Unactive tabs text color */
-  }
 
-  .nav-tabs .nav-item .nav-link.active {
-    color: black; /* Active tab text color */
-  }
+/* Course Navigation Sidebar styles */
+
+.course-nav .list-group {
+  border-radius: 0;
+  background-color: white;
+  list-style: none;
+  padding: 0;
+  width: 200px;
+  margin: 0;
+  margin-left: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.course-nav .list-group-item {
+  color: red;
+  background-color: white;
+  border: none;
+  padding: 0;
+  margin-bottom: 5px;
+  font-size: 0.8em;
+  text-align: left;
+  white-space: normal;
+  overflow-wrap: break-word;
+  transition: all 0.2s;
+}
+
+.course-nav .list-group-item a {
+  text-decoration: none;
+}
+
+.course-nav .list-group-item:not(.active)+.list-group-item {
+  margin-top: 20px;
+}
+
+.course-nav .list-group-item a:hover,
+.course-nav .list-group-item a:focus {
+  color: black; /* Change text color to black on hover and focus */
+}
+
+.course-nav .list-group-item:hover,
+.course-nav .list-group-item:focus {
+  background-color: white;
+  border-left: 4px solid black;
+  padding-left: 10px;
+}
+
+
+
+
+/* Course Settings Navigation styles */
+.course-settings-navigation .list-group {
+  margin: 0 20px;
+}
+
+.course-settings-navigation .list-group-item-secondary {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  text-decoration: None;
+  height: 35px;
+}
+
+.course-settings-navigation .list-group-item {
+  padding-left: 20px;
+  padding-right: 0;
+  align-items: center;
+}
+
+.course-settings-navigation .list-group-item-action {
+  padding-left: 20px;
+}
+
+.course-settings-navigation .list-group-item-secondary {
+  font-weight: bold;
+  padding-left: 10px;
+  text-decoration: None;
+}
+
+.course-settings-navigation .list-group-item .flex-fill p {
+  margin: 0;
+  padding: 0;
+}
+
+.course-settings-navigation .fa-check-circle {
+  color: green;
+  margin-left: auto;
+  margin-right: 20px;
+  float: right;
+}
+
+.course-settings-navigation .fas.fa-plus {
+  color: grey;
+  margin-right: 20px;
+}
+
+.course-settings-navigation .fas.fa-ellipsis-v {
+  color: black;
+  margin-right: 20px;
+  float: right;
+}
+
+.course-settings-navigation .link-item .fas.fa-link {
+  color: green;
+  margin-right: 10px;
+}
+
+.course-settings-navigation .link-item .fas.fa-external-link-alt {
+  padding-left: 5px;
+  color: red;
+  text-decoration: none;
+}
+
+.course-settings-navigation .slides-text {
+  color: red;
+  padding-left: 20px;
+}
+
+.course-settings-navigation .nav-tabs .nav-item .nav-link {
+  color: red;
+}
+
+.course-settings-navigation .nav-tabs .nav-item .nav-link.active {
+  color: black;
+}

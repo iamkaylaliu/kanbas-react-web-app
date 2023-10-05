@@ -1,153 +1,236 @@
-  /* Add left and right margin to the form */
-  .list-group {
-    margin: 0 20px;
-    /* Adjust the margin as needed */
-  }
+/* Outer Flex Container styles */
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
 
-  /* Add additional styling for the headers (Week0, Week1) */
-  .list-group-item-secondary {
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-    text-decoration: None;
-    height: 35px;
-  }
-
-  /* Apply text indentation to specified items */
-  .list-group-item {
-    padding-left: 10px;
-    padding-right: 0;
-    /* Adjust the indentation as needed */
-    border-left: 3px solid green;
-  }
-
-  /* Apply text indentation to specified items */
-  .list-group-item-action {
-    padding-left: 50px;
-
-    /* Adjust the indentation as needed */
-  }
-
-  /* Add additional styling for the headers (Week0, Week1) */
-  .list-group-item-secondary {
-    font-weight: bold;
-    /* Make headers bold */
-    padding-left: 10px;
-    text-decoration: None;
-  }
+.kanbas-nav,
+.course-nav,
+.grades {
+  flex-grow: 1;
+  padding: 0;
+  background-color: white;
+  margin: 0 ;
+  box-sizing: border-box;
+}
 
 
-  .fa-check-circle {
-    color: green;
-    margin-left: auto;
-    /* Push the icon to the rightmost end */
-    margin-right: 20px;
-    float: right;
-  }
+/* Kanbas Navigation Sidebar styles */
+.kanbas-nav .wd-kanbas-navigation,
+.kanbas-nav .list-group {
+  background-color: black;
+  list-style: none;
+  padding: 0px;
+  width: 80px;
+  margin: 0px;
+  font-family: Arial, sans-serif;
+}
 
-  /* Style the plus icon */
-  .fas.fa-plus {
-    color: grey;
-    /* Set the plus icon color (change as needed) */
-    margin-right: 20px;
-    /* Add some spacing to the right of the icon */
+.kanbas-nav .wd-kanbas-navigation li,
+.kanbas-nav .list-group-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 0.8em;
+  text-align: center;
+}
 
-  }
+.kanbas-nav .wd-kanbas-navigation li.wd-active {
+  background-color: white;
+}
 
-  /* Style the vertical dots icon */
-  .fas.fa-ellipsis-v {
-    color: black;
-    /* Set the vertical dots icon color (change as needed) */
-    margin-right: 20px;
-    /* Add some spacing to the right of the icon */
-    float: right;
-  }
+.kanbas-nav .wd-kanbas-navigation li.wd-active a {
+  color: red;
+}
 
-  .link-item .fas.fa-link {
-    color: green;
-    /* Set the link icon color to green */
-    margin-right: 10px;
-    /* Add some spacing to the right of the icon */
-  }
+.kanbas-nav .wd-kanbas-navigation a {
+  color: white;
+  text-decoration: none;
+}
 
-  /* Style the external link icon on the right */
-  .link-item .fas.fa-external-link-alt {
-    padding-left: 5px;
-    color: red;
-    /* Set the external link icon color to red */
-    text-decoration: none;
-    /* Remove underline from the external link icon */
-  }
+.kanbas-nav .wd-kanbas-navigation a i {
+  color: red;
+  font-size: 2em;
+  margin-bottom: 5px;
+}
 
-  .slides-text {
-    color: red;
-    /* Set the text color to red */
-    padding-left: 20px;
-  }
+.kanbas-nav .list-group-item.active {
+  color: red;
+  background-color: white;
+}
 
-  .btn-primary {
-    background-color: lightgray;
-    color: black;
-    border: none;
-    transition: background-color 0.3s, color 0.3s;
-    /* Add transition for smooth hover effect */
-    margin: 1px;
-    width: 150px;
-  }
+.kanbas-nav .list-group-item {
+  color: white;
+  background-color: black;
+  border: none;
+}
 
-  .custom-badge {
-    background-color: #f0f0f0;
-    /* Light gray background color */
-    border: 1px solid grey;
-    /* Gray border */
-    border-radius: 20px;
-    /* Adjust the radius for smoother corners */
-    color: black;
-    /* Gray text color */
-    width: 120px;
-    /* Set the width of the badge */
-    height: 30px;
-    /* Set the height of the badge */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    /* Adjust the font size as needed */
-    margin-right: 20px;
-  }
+.kanbas-nav .list-group-item:hover,
+.kanbas-nav .list-group-item:focus {
+  background-color: white;
+  color: red;
+}
 
-  /* Style the thin outline icon for LEARNING OBJECTIVES */
-  .list-group-item i.file-icon {
-    font-size: 22px;
-    /* Adjust the font size as needed */
-    margin-right: 15px;
-    /* Add right margin/padding */
-    color: green;
-    /* Icon color (green in this example) */
-    padding: 5px;
-    /* Add some padding for spacing within the icon */
-  }
 
-  .learning-objectives {
-    display: flex;
-    flex-direction: column;
-  }
+/* Course Navigation Sidebar styles */
 
-  .learning-objectives .line {
+.course-nav .list-group {
+  border-radius: 0;
+  background-color: white;
+  list-style: none;
+  padding: 0;
+  width: 200px;
+  margin: 0;
+  margin-left: 20px;
+  font-family: Arial, sans-serif;
+}
 
-    font-size: 14px;
-    line-height: 1.2;
-    margin-bottom: 2px;
-    /* Adjust the margin as needed for spacing */
-  }
+.course-nav .list-group-item {
+  color: red;
+  background-color: white;
+  border: none;
+  padding: 0;
+  margin-bottom: 5px;
+  font-size: 0.8em;
+  text-align: left;
+  white-space: normal;
+  overflow-wrap: break-word;
+  transition: all 0.2s;
+}
 
-  .a1-text {
-    font-weight: bold;
-    font-size: 2em;
-  }
+.course-nav .list-group-item a {
+  text-decoration: none;
+}
 
-  .due-text {
-    font-size: 0.5em;
-    color: grey;
-  }
+.course-nav .list-group-item:not(.active)+.list-group-item {
+  margin-top: 20px;
+}
+
+.course-nav .list-group-item a:hover,
+.course-nav .list-group-item a:focus {
+  color: black; /* Change text color to black on hover and focus */
+}
+
+.course-nav .list-group-item:hover,
+.course-nav .list-group-item:focus {
+  background-color: white;
+  border-left: 4px solid black;
+  padding-left: 10px;
+}
+
+
+/* Grades styles */
+.grades .list-group {
+  margin: 0 20px;
+}
+
+.grades .list-group-item-secondary {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  text-decoration: None;
+  height: 35px;
+}
+
+.grades .list-group-item {
+  padding-left: 10px;
+  padding-right: 0;
+  border-left: 3px solid green;
+}
+
+.grades .list-group-item-action {
+  padding-left: 50px;
+}
+
+.grades .list-group-item-secondary {
+  font-weight: bold;
+  padding-left: 10px;
+  text-decoration: None;
+}
+
+.grades .fa-check-circle {
+  color: green;
+  margin-left: auto;
+  margin-right: 20px;
+  float: right;
+}
+
+.grades .fas.fa-plus {
+  color: grey;
+  margin-right: 20px;
+}
+
+.grades .fas.fa-ellipsis-v {
+  color: black;
+  margin-right: 20px;
+  float: right;
+}
+
+.grades .link-item .fas.fa-link {
+  color: green;
+  margin-right: 10px;
+}
+
+.grades .link-item .fas.fa-external-link-alt {
+  padding-left: 5px;
+  color: red;
+  text-decoration: none;
+}
+
+.grades .slides-text {
+  color: red;
+  padding-left: 20px;
+}
+
+.grades .btn-primary {
+  background-color: lightgray;
+  color: black;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+  margin: 1px;
+  width: 150px;
+}
+
+.grades .custom-badge {
+  background-color: #f0f0f0;
+  border: 1px solid grey;
+  border-radius: 20px;
+  color: black;
+  width: 120px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  margin-right: 20px;
+}
+
+.grades .list-group-item i.file-icon {
+  font-size: 22px;
+  margin-right: 15px;
+  color: green;
+  padding: 5px;
+}
+
+.grades .learning-objectives {
+  display: flex;
+  flex-direction: column;
+}
+
+.grades .learning-objectives .line {
+  font-size: 14px;
+  line-height: 1.2;
+  margin-bottom: 2px;
+}
+
+.grades .a1-text {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.grades .due-text {
+  font-size: 0.5em;
+  color: grey;
+}
