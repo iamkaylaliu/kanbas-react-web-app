@@ -1,0 +1,172 @@
+/* Outer Flex Container styles */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.kanbas-nav,
+.dashboard {
+  flex-grow: 1;
+  padding: 0; 
+  background-color: white; 
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.dashboard {
+  max-width: 85%;
+}
+
+
+/* Kanbas Navigation Sidebar styles */
+.kanbas-nav .wd-kanbas-navigation,
+.kanbas-nav .list-group {
+  background-color: black;
+  list-style: none;
+  padding: 0px;
+  width: 80px;
+  margin: 0px;
+  font-family: Arial, sans-serif;
+}
+
+.kanbas-nav .wd-kanbas-navigation li,
+.kanbas-nav .list-group-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.kanbas-nav .wd-kanbas-navigation li.wd-active {
+  background-color: white;
+}
+
+.kanbas-nav .wd-kanbas-navigation li.wd-active a {
+  color: red;
+}
+
+.kanbas-nav .wd-kanbas-navigation a {
+  color: white;
+  text-decoration: none;
+}
+
+.kanbas-nav .wd-kanbas-navigation a i {
+  color: red;
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+.kanbas-nav .list-group-item.active {
+  color: red;
+  background-color: white;
+}
+
+.kanbas-nav .list-group-item {
+  color: white;
+  background-color: black;
+  border: none;
+}
+
+.kanbas-nav .list-group-item:hover,
+.kanbas-nav .list-group-item:focus {
+  background-color: white;
+  color: red;
+}
+
+
+
+/* Dashboard styles */
+.dashboard .card {
+  width: 100%;
+  max-width: 260px;
+  height: 260px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  font-family: Arial, sans-serif;
+  margin: 15px;
+}
+
+.dashboard .card-bg-blue {
+  background-color: #005f9f;
+  height: 60%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.dashboard .card-bg-medium-blue {
+  background-color: #0074e4;
+}
+
+.dashboard .card-bg-light-blue {
+  background-color: #4fc1e9;
+}
+
+.dashboard .card-bg-very-light-blue {
+  background-color: #a0d3e8;
+}
+
+.dashboard .card-title {
+  font-size: 0.9em;
+  color: #005f9f;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+
+.dashboard .card-title-blue {
+  color: #0074e4;
+}
+
+.dashboard .card-title-medium-blue {
+  color: #0074e4;
+}
+
+.dashboard .card-title-light-blue {
+  color: #4fc1e9;
+}
+
+.dashboard .card-title-very-light-blue {
+  color: #a0d3e8;
+}
+
+.dashboard .card-term,
+.dashboard .card-year {
+  font-size: 0.8em;
+  color: grey;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+
+.dashboard .card-term {
+  font-size: 1em;
+}
+
+.dashboard .no-underline {
+  text-decoration: none;
+}
+
+.dashboard .card-body {
+  padding: 10px;
+}
+
+.dashboard .card-body i {
+  font-size: 1.2em;
+  margin: 5px;
+  color: grey;
+}
+
+.dashboard .courses-grid {
+  margin-left: 20px;
+}
+
+.dashboard .h3-margin-left {
+  margin-left: 35px;
+}

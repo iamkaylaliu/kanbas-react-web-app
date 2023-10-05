@@ -1,73 +1,118 @@
-<select>
-    <option>SpeedGrader</option>
-    <option>SlowGrader</option>
-</select>
-<hr />
-<h3>Assignment Name</h3>
-<input type="text" value="A1 - ENV + HTML" id="assignmentName" placeholder="Assignment Name" /> <br /><br />
-<textarea cols="50" rows="5">
-This is the first assignment description.
-</textarea> <br /><br />
-
-<label for="points">Points</label> <br />
-<input value="100" type="number" max="100" min="50" step="5" /> <br /><br />
-
-<label for="assignmentGroup">Assignment Group</label> <br />
-<select>
-    <option>ASSIGNMENTS</option>
-    <option>MORE</option>
-</select> <br /><br />
-
-<label for="displayGradeAs">Display Grade as</label> <br />
-<select>
-    <option>Percentage</option>
-    <option>Absolute</option>
-</select> <br /><br />
-
-<label for="submissionType">Submission Type</label> <br />
-<select>
-    <option>Online</option>
-    <option>Offline</option>
-</select> <br /><br />
-
-<label for="onlineEntryOptions">Online Entry Options</label> <br />
-<input type="checkbox" id="textEntry" /> <label for="textEntry">Text Entry</label><br />
-<input type="checkbox" /> Website URL <br />
-<input type="checkbox" /> Media Recordings <br />
-<input type="checkbox" /> Student Annotation <br />
-<input type="checkbox" /> File Uploads <br /><br />
-
-<label for="submissionAttemts">Submission Attemts</label> <br />
-<select>
-    <option>Unlimited</option>
-    <option>Limited</option>
-</select> <br /><br />
-
-<label for="plagiarismReview">Plagiarism Review</label> <br />
-<select>
-    <option>None</option>
-    <option>Some</option>
-</select> <br /><br />
-
-<label for="groupAssignment">Group Assignment</label> <br />
-<input type="checkbox" id="groupAssignment" /> <label for="groupAssignment">This is a group assignment</label><br /><br />
-
-<label for="peerReviews">Peer Reviews</label> <br />
-<input type="checkbox" id="peerReviews" /> <label for="peerReviews">Require Peer Reviews</label><br /><br />
-
-<label for="assign">Assign</label> <br />
-<label for="assignTo">Assign to</label> <br />
-<input value="Everyone" type="text" max="100" min="50" step="5" /> <br /><br />
+<link href="../../../../vendors/fontawesome/css/all.css" rel="stylesheet" />
+<link href="../../../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<link href="index.css" rel="stylesheet" />
 
 
-<label for="due">Due</label> <br />
-<input type="date" value="2020-09-16" min="2020-09-04" max="2020-09-23" /> <br /><br />
+<div class="container">
+  <div class="row">
+    <div class="col-10">
 
-<label for="availableFrom">Available from</label> <br />
-<input type="date" value="2020-09-16" min="2020-09-04" max="2020-09-23" /> <br /><br />
+      <div class="mb-3">
+        <label for="name" class="col-form-label">Assignment Name</label><br />
+        <input type="text" class="form-control" id="name" value="A1 - ENV + HTML" required><br/>
+        <textarea class="form-control" id="biography" rows="4">This assignment describes how to install the development environment for creating and working with Web applications we will be developing this semester.</textarea>
+      </div>
 
-<label for="until">Until</label> <br />
-<input type="date" value="2020-09-16" min="2020-09-04" max="2020-09-23" /> <br /><br />
+      <form style="margin: 0 20px;"> 
+        <div class="mb-3 row justify-content-center">
+          <label for="name" class="col-form-label col-sm-3 text-end">Points</label> 
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="name" value="100" required>
+          </div>
+        </div>
 
-<a href="/Kanbas/Courses/Assignments/screen.html"><button>Save</button></a>
-<a href="/Kanbas/Courses/Assignments/screen.html"><button>Cancel</button></a>
+        <div class="mb-3 row justify-content-center">
+          <label for="assignment-group" class="col-form-label col-sm-3 text-end">Assignment Group</label>
+          <div class="col-sm-9">
+            <select class="form-select" id="assignment-group" required>
+              <option value="option1">Percentage</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+            </select>
+            <div class="form-check mt-2">
+              <input class="form-check-input" type="checkbox" id="checkbox">
+              <label class="form-check-label" for="checkbox">
+                Do not count this assignment towards the final grade
+              </label>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mb-3 row justify-content-center">
+          <label for="submission-type" class="col-form-label col-sm-3 text-end">Submission Type</label>
+          <div class="col-sm-9" style="border: 1px solid #ccc; padding: 10px;">
+            <select class="form-select" id="submission-type" required>
+              <option value="option1">Online</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+            </select>
+            <div class="mt-3">
+              <p class="fw-bold">Online Entry Options</p>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkbox1">
+                <label class="form-check-label" for="checkbox1">Text Entry</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkbox2">
+                <label class="form-check-label" for="checkbox2">Website URL</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkbox3">
+                <label class="form-check-label" for="checkbox3">Media Recordings</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkbox4">
+                <label class="form-check-label" for="checkbox4">Student Annotation</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkbox5">
+                <label class="form-check-label" for="checkbox5">File Uploads</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mb-3 row justify-content-center">
+          <label for="assign" class="col-form-label col-sm-3 text-end">Assign to</label>
+          <div class="col-sm-9" style="border: 1px solid #ccc; padding: 10px;">
+            <label for="name" class="col-form-label fw-bold">Assignment Name</label><br />
+            <input type="text" class="form-control" id="name" value="Everyone X" required><br />
+            
+            <label for="due-date" class="col-form-label fw-bold">Due Date Format</label><br />
+            <input type="date" class="form-control" id="due-date" required>
+            
+            <div class="mt-3">
+              <div class="row">
+                <div class="col-6">
+                  <label for="youtube" class="fw-bold">YouTube</label><br />
+                  <input type="date" class="form-control" id="youtube">
+                </div>
+                <div class="col-6">
+                  <label for="url" class="fw-bold">URL</label><br />
+                  <input type="date" class="form-control" id="url">
+                </div>
+              </div>
+            </div>
+            
+            <div class="mt-3 text-center" style="background-color: lightgray; padding: 10px;">
+              <span class="text-center">+ Add</span>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <hr/>
+
+      <div class="form-check mt-2">
+        <input class="form-check-input" type="checkbox" id="checkbox">
+        <label class="form-check-label" for="checkbox">
+          Notify users that this content has changed
+        </label>
+      </div>
+
+      <div class="d-flex justify-content-end">
+        <a href="/Kanbas/Account/Profile/screen.html" class="btn btn-secondary me-2">Cancel</a>
+        <a href="/Kanbas/Account/Profile/screen.html" class="btn btn-save-profile">Save Profile</a>
+      </div>
+    </div>
+    <hr/>

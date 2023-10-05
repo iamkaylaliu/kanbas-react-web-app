@@ -1,0 +1,48 @@
+/* Set a minimum and maximum width for the sidebar */
+.list-group {
+  border-radius: 0;
+  background-color: white;
+  list-style: none;
+  padding: 0;
+  width: 200px; /* Adjusted to meet the width requirements */
+  margin: 0;
+  margin-left: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Style for non-selected links */
+.list-group-item {
+  color: red;
+  background-color: white;
+  border: none;
+  padding: 0;
+  margin-bottom: 5px; /* Adjusted margin to meet space between links requirement */
+  font-size: 0.8em;
+  text-align: left;
+  white-space: normal; /* Allow long text to wrap */
+  overflow-wrap: break-word;
+  transition: all 0.2s; /* Add transition for smooth hover/click effect */
+}
+
+/* Remove underlines from links */
+.list-group-item a {
+  text-decoration: none;
+}
+
+/* Add space between links */
+.list-group-item:not(.active) + .list-group-item {
+  margin-top: 20px; /* Space between links */
+}
+
+/* Apply black text and border to the left when links are hovered or focused */
+.list-group-item a:hover,
+.list-group-item a:focus {
+  color: black;
+}
+
+.list-group-item:hover,
+.list-group-item:focus {
+  background-color: white; /* To maintain the white background when hovered or focused */
+  border-left: 4px solid black; /* Added border for hovered/clicked links */
+  padding-left: 10px; /* Adjusted padding to meet the space requirement */
+}

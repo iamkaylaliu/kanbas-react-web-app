@@ -1,0 +1,47 @@
+/* Account Navigation Sidebar styles */
+.account-navigation .list-group {
+  border-radius: 0;
+  background-color: white;
+  list-style: none;
+  padding: 0;
+  width: 200px;
+  margin: 0;
+  margin-left: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.account-navigation .list-group-item {
+  color: red;
+  background-color: white;
+  border: none;
+  padding: 0;
+  margin-bottom: 5px;
+  font-size: 0.8em;
+  text-align: left;
+  white-space: normal;
+  overflow-wrap: break-word;
+  transition: all 0.2s;
+}
+
+.account-navigation .list-group-item a {
+  text-decoration: none;
+}
+
+/* Add space between links */
+.account-navigation .list-group-item:not(.active) + .list-group-item {
+  margin-top: 20px;
+}
+
+/* Apply black text and border to the left when links are hovered or focused */
+.account-navigation .list-group-item:hover,
+.account-navigation .list-group-item:focus {
+  background-color: white;
+  border-left: 4px solid black;
+  padding-left: 10px;
+  color: black; /* Set text color to black on hover and focus */
+}
+
+.account-navigation .list-group-item.active,
+.account-navigation .list-group-item.active a {
+  color: black; /* Set text color to black for active item */
+}

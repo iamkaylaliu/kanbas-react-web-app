@@ -1,0 +1,54 @@
+/* Kanbas Navigation Sidebar */
+.kanbas-nav .wd-kanbas-navigation,
+.kanbas-nav .list-group {
+  background-color: black;
+  list-style: none;
+  padding: 0px;
+  width: 80px;
+  margin: 0px;
+  font-family: Arial, sans-serif;
+}
+
+.kanbas-nav .wd-kanbas-navigation li,
+.kanbas-nav .list-group-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.kanbas-nav .wd-kanbas-navigation li.wd-active {
+  background-color: white;
+}
+
+.kanbas-nav .wd-kanbas-navigation li.wd-active a {
+  color: red;
+}
+
+.kanbas-nav .wd-kanbas-navigation a {
+  color: white;
+  text-decoration: none;
+}
+
+.kanbas-nav .wd-kanbas-navigation a i {
+  color: red;
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+.kanbas-nav .list-group-item.active {
+  color: red;
+  background-color: white;
+}
+
+.kanbas-nav .list-group-item {
+  color: white;
+  background-color: black;
+  border: none;
+}
+
+.kanbas-nav .list-group-item:hover,
+.kanbas-nav .list-group-item:focus {
+  background-color: white;
+  color: red;
+}

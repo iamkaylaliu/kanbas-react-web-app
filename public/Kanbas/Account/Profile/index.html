@@ -1,14 +1,41 @@
-<h1>Profile</h1>
-<h2>Alice Wonderland</h2>
-<h3>Contact</h3>
-<p>No registered services, you can add some on the settings page.</p>
+<link href="../../../vendors/fontawesome/css/all.css" rel="stylesheet" />
+<link href="../../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<link href="index.css" rel="stylesheet" />
 
-<h3>Biography</h3>
-<p>Faculty, Software Engineer, AI, Space, and renewables enthusiast.</p>
 
-<h3>Links</h3>
-<a href="#">YouTube</a> <br /><br />
+<div class="container">
+  <div class="left-column">
+    <!-- Left Column -->
+    <div class="account-icon">
+      <i class="fas fa-user" style="color: grey"></i>
+    </div>
 
-<form action="/Kanbas/Account/Profile/EditProfile/screen.html">
-  <button>Edit Profile</button>
-</form>
+    <h2>Kayla Liu</h2>
+    <div class="mb-3">
+      <label for="contact" class="col-form-label">Contact</label><br />
+      <span class="form-text">No registered services, you can add some on the <a
+          href="/Kanbas/Courses/Settings/screen.html" class="no-underline-red">settings</a> page.</span>
+    </div>
+
+    <div class="mb-3">
+      <label for="biography" class="col-form-label">Biography</label><br />
+      <span class="form-text">Faculty, Software Engineer, AI, Space, and renewables enthusiast.</span>
+    </div>
+
+    <div class="mb-3">
+      <label for="links" class="col-form-label">Links</label><br />
+      <span class="form-text">
+        <a href="https://youtu.be/YzZz16Gtfdc">
+          <i class="fas fa-link"></i> YouTube <i class="fas fa-external-link-alt"></i>
+        </a>
+      </span>
+    </div>
+  </div>
+  <!-- Right Column -->
+  <div class="col-4 float-md-end">
+    <a class="btn btn-primary float-end" href="/Kanbas/Account/Profile/EditProfile/screen.html" role="button">
+      <i class="fas fa-pencil-alt"></i> Edit Profile
+    </a>
+  </div>
+
+</div>

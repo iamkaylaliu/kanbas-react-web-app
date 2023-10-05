@@ -1,0 +1,206 @@
+/* Outer Flex Container styles */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.kanbas-nav,
+.account-navigation,
+.edit-profile {
+  flex-grow: 1;
+  padding: 0; 
+  background-color: white; 
+  margin: 0 10px;
+  box-sizing: border-box;
+}
+
+
+/* Kanbas Navigation Sidebar styles */
+.kanbas-nav .wd-kanbas-navigation,
+.kanbas-nav .list-group {
+  background-color: black;
+  list-style: none;
+  padding: 0px;
+  width: 80px;
+  margin: 0px;
+  font-family: Arial, sans-serif;
+}
+
+.kanbas-nav .wd-kanbas-navigation li,
+.kanbas-nav .list-group-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.kanbas-nav .wd-kanbas-navigation li.wd-active {
+  background-color: white;
+}
+
+.kanbas-nav .wd-kanbas-navigation li.wd-active a {
+  color: red;
+}
+
+.kanbas-nav .wd-kanbas-navigation a {
+  color: white;
+  text-decoration: none;
+}
+
+.kanbas-nav .wd-kanbas-navigation a i {
+  color: red;
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+.kanbas-nav .list-group-item.active {
+  color: red;
+  background-color: white;
+}
+
+.kanbas-nav .list-group-item {
+  color: white;
+  background-color: black;
+  border: none;
+}
+
+.kanbas-nav .list-group-item:hover,
+.kanbas-nav .list-group-item:focus {
+  background-color: white;
+  color: red;
+}
+
+
+/* Account Navigation Sidebar styles */
+.account-navigation .list-group {
+  border-radius: 0;
+  background-color: white;
+  list-style: none;
+  padding: 0;
+  width: 200px;
+  margin: 0;
+  margin-left: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.account-navigation .list-group-item {
+  color: red;
+  background-color: white;
+  border: none;
+  padding: 0;
+  margin-bottom: 5px;
+  font-size: 0.8em;
+  text-align: left;
+  white-space: normal;
+  overflow-wrap: break-word;
+  transition: all 0.2s;
+}
+
+.account-navigation .list-group-item a {
+  text-decoration: none;
+}
+
+/* Add space between links */
+.account-navigation .list-group-item:not(.active) + .list-group-item {
+  margin-top: 20px;
+}
+
+/* Apply black text and border to the left when links are hovered or focused */
+.account-navigation .list-group-item:hover,
+.account-navigation .list-group-item:focus {
+  background-color: white;
+  border-left: 4px solid black;
+  padding-left: 10px;
+  color: black; /* Set text color to black on hover and focus */
+}
+
+.account-navigation .list-group-item.active,
+.account-navigation .list-group-item.active a {
+  color: black; /* Set text color to black for active item */
+}
+
+
+
+
+/* Edit Profile styles */
+.edit-profile .account-icon {
+  margin-right: 10px;
+  vertical-align: middle;
+  color: grey;
+}
+
+.edit-profile h2 {
+  text-align: left;
+}
+
+.edit-profile .mb-3 {
+  margin-bottom: 20px;
+}
+
+.edit-profile .btn-primary,
+.edit-profile .btn-secondary {
+  background-color: lightgray;
+  color: black;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.edit-profile .btn-primary:hover,
+.edit-profile .btn-primary:focus,
+.edit-profile .btn-secondary:hover,
+.edit-profile .btn-secondary:focus {
+  background-color: red;
+  color: white;
+}
+
+.edit-profile .btn i.fas.fa-pencil-alt {
+  margin-right: 5px;
+}
+
+.edit-profile .form-text i.fas.fa-external-link-alt {
+  margin-left: 5px;
+}
+
+.edit-profile .form-text a .fa-link {
+  color: grey;
+}
+
+.edit-profile .no-underline-red {
+  text-decoration: none;
+  color: red;
+}
+
+.edit-profile .container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.edit-profile .left-column {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.edit-profile .right-column {
+  align-self: flex-start;
+}
+
+.edit-profile .btn-save-profile {
+  background-color: red;
+  color: white;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.edit-profile .btn-save-profile:hover,
+.edit-profile .btn-save-profile:focus {
+  background-color: red;
+  color: white;
+}
+
+
+

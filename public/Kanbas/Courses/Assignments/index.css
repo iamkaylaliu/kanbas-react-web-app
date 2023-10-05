@@ -1,0 +1,153 @@
+  /* Add left and right margin to the form */
+  .list-group {
+    margin: 0 20px;
+    /* Adjust the margin as needed */
+  }
+
+  /* Add additional styling for the headers (Week0, Week1) */
+  .list-group-item-secondary {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    text-decoration: None;
+    height: 35px;
+  }
+
+  /* Apply text indentation to specified items */
+  .list-group-item {
+    padding-left: 10px;
+    padding-right: 0;
+    /* Adjust the indentation as needed */
+    border-left: 3px solid green;
+  }
+
+  /* Apply text indentation to specified items */
+  .list-group-item-action {
+    padding-left: 50px;
+
+    /* Adjust the indentation as needed */
+  }
+
+  /* Add additional styling for the headers (Week0, Week1) */
+  .list-group-item-secondary {
+    font-weight: bold;
+    /* Make headers bold */
+    padding-left: 10px;
+    text-decoration: None;
+  }
+
+
+  .fa-check-circle {
+    color: green;
+    margin-left: auto;
+    /* Push the icon to the rightmost end */
+    margin-right: 20px;
+    float: right;
+  }
+
+  /* Style the plus icon */
+  .fas.fa-plus {
+    color: grey;
+    /* Set the plus icon color (change as needed) */
+    margin-right: 20px;
+    /* Add some spacing to the right of the icon */
+
+  }
+
+  /* Style the vertical dots icon */
+  .fas.fa-ellipsis-v {
+    color: black;
+    /* Set the vertical dots icon color (change as needed) */
+    margin-right: 20px;
+    /* Add some spacing to the right of the icon */
+    float: right;
+  }
+
+  .link-item .fas.fa-link {
+    color: green;
+    /* Set the link icon color to green */
+    margin-right: 10px;
+    /* Add some spacing to the right of the icon */
+  }
+
+  /* Style the external link icon on the right */
+  .link-item .fas.fa-external-link-alt {
+    padding-left: 5px;
+    color: red;
+    /* Set the external link icon color to red */
+    text-decoration: none;
+    /* Remove underline from the external link icon */
+  }
+
+  .slides-text {
+    color: red;
+    /* Set the text color to red */
+    padding-left: 20px;
+  }
+
+  .btn-primary {
+    background-color: lightgray;
+    color: black;
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+    /* Add transition for smooth hover effect */
+    margin: 1px;
+    width: 150px;
+  }
+
+  .custom-badge {
+    background-color: #f0f0f0;
+    /* Light gray background color */
+    border: 1px solid grey;
+    /* Gray border */
+    border-radius: 20px;
+    /* Adjust the radius for smoother corners */
+    color: black;
+    /* Gray text color */
+    width: 120px;
+    /* Set the width of the badge */
+    height: 30px;
+    /* Set the height of the badge */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    /* Adjust the font size as needed */
+    margin-right: 20px;
+  }
+
+  /* Style the thin outline icon for LEARNING OBJECTIVES */
+  .list-group-item i.file-icon {
+    font-size: 22px;
+    /* Adjust the font size as needed */
+    margin-right: 15px;
+    /* Add right margin/padding */
+    color: green;
+    /* Icon color (green in this example) */
+    padding: 5px;
+    /* Add some padding for spacing within the icon */
+  }
+
+  .learning-objectives {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .learning-objectives .line {
+
+    font-size: 14px;
+    line-height: 1.2;
+    margin-bottom: 2px;
+    /* Adjust the margin as needed for spacing */
+  }
+
+  .a1-text {
+    font-weight: bold;
+    font-size: 2em;
+  }
+
+  .due-text {
+    font-size: 0.5em;
+    color: grey;
+  }

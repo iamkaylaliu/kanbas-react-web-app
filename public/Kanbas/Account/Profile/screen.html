@@ -1,50 +1,92 @@
-<table width="100%" border="1">
-  <tr>
-    <td valign="top">
-      <ul>
-        <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-        <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-        <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-        <!-- Add a space line -->
-        <li></li>
-        <li><a href="#">Calendar</a></li>
-        <li><a href="#">Inbox</a></li>
-        <li><a href="#">History</a></li>
-        <li><a href="#">Studio</a></li>
-        <li><a href="#">Commons</a></li>
-        <li><a href="#">Help</a></li>
-      </ul>
-    </td>
-    <td valign="top">
-      <ul>
-        <li><a href="/Kanbas/Account/Profile/screen.html">Profile</a></li>
-        <!-- Add a space line -->
-        <li></li>
-        <li><a href="#">Notifications</a></li>
-        <li><a href="#">Files</a></li>
-        <li><a href="#">Settings</a></li>
-        <li><a href="#">ePortfolios</a></li>
-        <li><a href="#">Shared Content</a></li>
-        <li><a href="#">The Hub</a></li>
-        <li><a href="#">Quickly Course Tools</a></li>
-        <li><a href="#">Global Announcements</a></li>
-      </ul>
-    </td>
-    <td valign="top">
-      <h1>Profile</h1>
-      <h2>Alice Wonderland</h2>
-      <h3>Contact</h3>
-      <p>No registered services, you can add some on the settings page.</p>
+<link href="../../../vendors/fontawesome/css/all.css" rel="stylesheet" />
+<link href="../../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<link href="index.css" rel="stylesheet" />
 
-      <h3>Biography</h3>
-      <p>Faculty, Software Engineer, AI, Space, and renewables enthusiast.</p>
 
-      <h3>Links</h3>
-      <a href="#">YouTube</a> <br /><br />
+<div class="flex-container">
+        <div class="kanbas-nav">
+            <div class="list-group wd-kanbas-navigation">
+                <a href="/Kanbas/Account/Profile/screen.html"
+                    class="list-group-item list-group-item-action account-link">
+                    <i class="fa fa-user" style="color:lightgrey;"></i> Account
+                </a>
+                <a href="/Kanbas/Dashboard/screen.html" class="list-group-item list-group-item-action">
+                    <i class="far fa-chart-bar"></i> Dashboard
+                </a>
+                <a href="/Kanbas/Courses/Home/screen.html" class="list-group-item list-group-item-action">
+                    <i class="fa fa-book"></i> Courses
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="far fa-calendar-alt"></i> Calendar
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa fa-inbox"></i> Inbox
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa fa-history"></i> History
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa fa-film"></i> Studio
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa fa-share"></i> Commons
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="far fa-question-circle" style="font-size: 2.7em"></i> Help
+                </a>
+            </div>
+        </div>
 
-      <form action="/Kanbas/Account/Profile/EditProfile/screen.html">
-        <button>Edit Profile</button>
-      </form>
-    </td>
-  </tr>
-</table>
+        <div class="account-navigation" style="margin-top: 20px;">
+            <a href="#" class="list-group-item list-group-item-action">Notifications</a>
+            <a href="/Kanbas/Account/Profile/screen.html" class="list-group-item list-group-item-action">Profile</a>
+            <a href="#" class="list-group-item list-group-item-action">Files</a>
+            <a href="#" class="list-group-item list-group-item-action">Settings</a>
+            <a href="#" class="list-group-item list-group-item-action">ePortfolio</a>
+            <a href="#" class="list-group-item list-group-item-action">Shared Content</a>
+            <a href="#" class="list-group-item list-group-item-action">The Hub</a>
+            <a href="#" class="list-group-item list-group-item-action">Quickly Course Tools</a>
+            <a href="#" class="list-group-item list-group-item-action">Global Announcements</a>
+        </div>
+
+        <div class="profile">
+            <div class="container">
+                <div class="left-column">
+                  <!-- Left Column -->
+                  <div class="account-icon">
+                    <i class="fas fa-user" style="color: grey"></i>
+                  </div>
+              
+                  <h2>Kayla Liu</h2>
+                  <div class="mb-3">
+                    <label for="contact" class="col-form-label">Contact</label><br />
+                    <span class="form-text">No registered services, you can add some on the <a
+                        href="/Kanbas/Courses/Settings/screen.html" class="no-underline-red">settings</a> page.</span>
+                  </div>
+              
+                  <div class="mb-3">
+                    <label for="biography" class="col-form-label">Biography</label><br />
+                    <span class="form-text">Faculty, Software Engineer, AI, Space, and renewables enthusiast.</span>
+                  </div>
+              
+                  <div class="mb-3">
+                    <label for="links" class="col-form-label">Links</label><br />
+                    <span class="form-text">
+                      <a href="https://youtu.be/YzZz16Gtfdc">
+                        <i class="fas fa-link"></i> YouTube <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+                <!-- Right Column -->
+                <div class="col-4 float-md-end">
+                  <a class="btn btn-primary float-end" href="/Kanbas/Account/Profile/EditProfile/screen.html" role="button">
+                    <i class="fas fa-pencil-alt"></i> Edit Profile
+                  </a>
+                </div>
+              
+              </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,90 @@
+  /* Add left and right margin to the form */
+  .list-group {
+      margin: 0 20px;
+      /* Adjust the margin as needed */
+  }
+
+  /* Add additional styling for the headers (Week0, Week1) */
+  .list-group-item-secondary {
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      padding-left: 10px;
+      text-decoration: None;
+      height: 35px;
+  }
+
+  /* Apply text indentation to specified items */
+  .list-group-item {
+      padding-left: 20px;
+      padding-right: 0;
+      align-items: center;
+      /* Adjust the indentation as needed */
+  }
+
+
+
+  /* Apply text indentation to specified items */
+  .list-group-item-action {
+      padding-left: 20px;
+      /* Adjust the indentation as needed */
+  }
+
+  /* Add additional styling for the headers (Week0, Week1) */
+  .list-group-item-secondary {
+      font-weight: bold;
+      /* Make headers bold */
+      padding-left: 10px;
+      text-decoration: None;
+  }
+
+  .list-group-item .flex-fill p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .fa-check-circle {
+    color: green; 
+    margin-left: auto; /* Push the icon to the rightmost end */
+    margin-right: 20px; 
+    float: right;
+  }
+
+  /* Style the plus icon */
+.fas.fa-plus {
+    color: grey; /* Set the plus icon color (change as needed) */
+    margin-right: 20px; /* Add some spacing to the right of the icon */
+
+  }
+  
+  /* Style the vertical dots icon */
+  .fas.fa-ellipsis-v {
+    color: black; /* Set the vertical dots icon color (change as needed) */
+    margin-right: 20px; /* Add some spacing to the right of the icon */
+    float: right;
+  }
+
+  .link-item .fas.fa-link {
+    color: green; /* Set the link icon color to green */
+    margin-right: 10px; /* Add some spacing to the right of the icon */
+  }
+  
+  /* Style the external link icon on the right */
+  .link-item .fas.fa-external-link-alt {
+    padding-left: 5px;
+    color: red; /* Set the external link icon color to red */
+    text-decoration: none; /* Remove underline from the external link icon */
+  }
+
+  .slides-text {
+    color: red; /* Set the text color to red */
+    padding-left: 20px;
+  }
+
+  .nav-tabs .nav-item .nav-link {
+    color: red; /* Unactive tabs text color */
+  }
+
+  .nav-tabs .nav-item .nav-link.active {
+    color: black; /* Active tab text color */
+  }

@@ -1,0 +1,45 @@
+.breadcrumb-item a {
+    text-decoration: none;
+    color: red;
+}
+
+.btn-primary{
+  background-color: lightgray;
+  color: black;
+  border: none;
+  transition: background-color 0.3s, color 0.3s; /* Add transition for smooth hover effect */
+  margin: 1px;
+}
+
+.btn-secondary {
+    background-color: red;
+    color: white;
+    border: none;
+    transition: background-color 0.3s, color 0.3s; /* Add transition for smooth hover effect */
+    margin: 1px;
+  }
+
+  .btn-third {
+    background-color: #8bc34a;
+    color: white;
+    border: none;
+    transition: background-color 0.3s, color 0.3s; /* Add transition for smooth hover effect */
+    margin: 1px;
+  }
+
+  
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: lightgrey;
+  color: black;
+}
+
+/* Style for the checked circle icon */
+.btn i.fas.fa-check-circle {
+    font-size: 1.2em; /* Adjust the size as needed */
+    margin-right: 5px; /* Add spacing between the icon and text */
+  }
+  
