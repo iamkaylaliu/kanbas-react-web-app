@@ -1,45 +1,231 @@
-.breadcrumb-item a {
-    text-decoration: none;
-    color: red;
+/* Outer Flex Container styles */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
-.btn-primary{
+.kanbas-nav,
+.course-nav,
+.course-modules,
+.course-buttons {
+  flex-grow: 1;
+  padding: 0;
+  background-color: white;
+  margin: 0 ;
+  box-sizing: border-box;
+}
+
+
+/* Kanbas Navigation Sidebar styles */
+.kanbas-nav .wd-kanbas-navigation,
+.kanbas-nav .list-group {
+  background-color: black;
+  list-style: none;
+  padding: 0px;
+  width: 80px;
+  margin: 0px;
+  font-family: Arial, sans-serif;
+}
+
+.kanbas-nav .wd-kanbas-navigation li,
+.kanbas-nav .list-group-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.kanbas-nav .wd-kanbas-navigation li.wd-active {
+  background-color: white;
+}
+
+.kanbas-nav .wd-kanbas-navigation li.wd-active a {
+  color: red;
+}
+
+.kanbas-nav .wd-kanbas-navigation a {
+  color: white;
+  text-decoration: none;
+}
+
+.kanbas-nav .wd-kanbas-navigation a i {
+  color: red;
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+.kanbas-nav .list-group-item.active {
+  color: red;
+  background-color: white;
+}
+
+.kanbas-nav .list-group-item {
+  color: white;
+  background-color: black;
+  border: none;
+}
+
+.kanbas-nav .list-group-item:hover,
+.kanbas-nav .list-group-item:focus {
+  background-color: white;
+  color: red;
+}
+
+
+/* Course Navigation Sidebar styles */
+
+.course-nav .list-group {
+  border-radius: 0;
+  background-color: white;
+  list-style: none;
+  padding: 0;
+  width: 200px;
+  margin: 0;
+  margin-left: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.course-nav .list-group-item {
+  color: red;
+  background-color: white;
+  border: none;
+  padding: 0;
+  margin-bottom: 5px;
+  font-size: 0.8em;
+  text-align: left;
+  white-space: normal;
+  overflow-wrap: break-word;
+  transition: all 0.2s;
+}
+
+.course-nav .list-group-item a {
+  text-decoration: none;
+}
+
+.course-nav .list-group-item:not(.active)+.list-group-item {
+  margin-top: 20px;
+}
+
+.course-nav .list-group-item a:hover,
+.course-nav .list-group-item a:focus {
+  color: black; /* Change text color to black on hover and focus */
+}
+
+.course-nav .list-group-item:hover,
+.course-nav .list-group-item:focus {
+  background-color: white;
+  border-left: 4px solid black;
+  padding-left: 10px;
+}
+
+
+/* Course Modules styles*/
+.course-modules {
+  margin: 0 ;
+  max-width: 100%;
+}
+
+.course-modules .list-group-item-secondary {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  text-decoration: none;
+  height: 35px;
+}
+
+.course-modules .list-group-item {
+  padding-left: 10px;
+  padding-right: 0;
+  border-left: 3px solid green;
+}
+
+.course-modules .list-group-item-action {
+  padding-left: 50px;
+}
+
+.course-modules .list-group-item-secondary {
+  font-weight: bold;
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+.course-modules .fa-check-circle {
+  color: green;
+  margin-left: auto;
+  margin-right: 20px;
+  float: right;
+}
+
+.course-modules .fas.fa-plus {
+  color: grey;
+  margin-right: 20px;
+}
+
+.course-modules .fas.fa-ellipsis-v {
+  color: black;
+  margin-right: 20px;
+  float: right;
+}
+
+.course-modules .link-item .fas.fa-link {
+  color: green;
+  margin-right: 10px;
+}
+
+.course-modules .link-item .fas.fa-external-link-alt {
+  padding-left: 5px;
+  color: red;
+  text-decoration: none;
+}
+
+.course-modules .slides-text {
+  color: red;
+  padding-left: 20px;
+}
+
+
+/* Course Button styles */
+.breadcrumb-item a {
+  text-decoration: none;
+  color: red;
+}
+
+.course-buttons .btn-primary {
   background-color: lightgray;
   color: black;
   border: none;
-  transition: background-color 0.3s, color 0.3s; /* Add transition for smooth hover effect */
+  transition: background-color 0.3s, color 0.3s;
   margin: 1px;
 }
 
-.btn-secondary {
-    background-color: red;
-    color: white;
-    border: none;
-    transition: background-color 0.3s, color 0.3s; /* Add transition for smooth hover effect */
-    margin: 1px;
-  }
+.course-buttons .btn-secondary {
+  background-color: red;
+  color: white;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+  margin: 1px;
+}
 
-  .btn-third {
-    background-color: #8bc34a;
-    color: white;
-    border: none;
-    transition: background-color 0.3s, color 0.3s; /* Add transition for smooth hover effect */
-    margin: 1px;
-  }
+.course-buttons .btn-third {
+  background-color: #8bc34a;
+  color: white;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+  margin: 1px;
+}
 
-  
-
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-secondary:hover,
-.btn-secondary:focus {
+.course-buttons .btn-primary:hover,
+.course-buttons .btn-primary:focus,
+.course-buttons .btn-secondary:hover,
+.course-buttons .btn-secondary:focus {
   background-color: lightgrey;
   color: black;
 }
 
-/* Style for the checked circle icon */
-.btn i.fas.fa-check-circle {
-    font-size: 1.2em; /* Adjust the size as needed */
-    margin-right: 5px; /* Add spacing between the icon and text */
-  }
-  
+.course-buttons .btn i.fas.fa-check-circle {
+  font-size: 1.2em;
+  margin-right: 5px;
+}
