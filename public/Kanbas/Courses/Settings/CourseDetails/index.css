@@ -74,7 +74,6 @@
 
 
 /* Course Navigation Sidebar styles */
-
 .course-nav .list-group {
   border-radius: 0;
   background-color: white;
@@ -103,20 +102,22 @@
   text-decoration: none;
 }
 
-.course-nav .list-group-item:not(.active)+.list-group-item {
+.course-nav .list-group-item:not(.active) + .list-group-item {
   margin-top: 20px;
 }
 
-.course-nav .list-group-item a:hover,
-.course-nav .list-group-item a:focus {
-  color: black; /* Change text color to black on hover and focus */
-}
-
+/* Apply black text and border to the left when links are hovered or focused */
 .course-nav .list-group-item:hover,
 .course-nav .list-group-item:focus {
   background-color: white;
   border-left: 4px solid black;
   padding-left: 10px;
+  color: black; /* Set text color to black on hover and focus */
+}
+
+.course-nav .list-group-item.active,
+.course-nav .list-group-item.active a {
+  color: black; /* Set text color to black for active item */
 }
 
 
