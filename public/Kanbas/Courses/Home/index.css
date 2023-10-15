@@ -82,7 +82,7 @@
   padding: 0;
   width: 200px;
   margin: 0;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   font-family: Arial, sans-serif;
 }
 
@@ -126,6 +126,7 @@
 .course-modules {
   margin: 0 ;
   max-width: 100%;
+  flex-grow: 2;
 }
 
 .course-modules .list-group-item-secondary {
@@ -202,6 +203,16 @@
   margin: 1px;
 }
 
+.course-buttons .btn-primary-long {
+  background-color: lightgray;
+  color: black;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+  margin: 1px;
+  width: 250px;
+  text-align: left;
+}
+
 .course-buttons .btn-secondary {
   background-color: red;
   color: white;
@@ -229,4 +240,32 @@
 .course-buttons .btn i.fas.fa-check-circle {
   font-size: 1.2em;
   margin-right: 5px;
+}
+
+/* Course Status styles */
+.learning-objectives {
+  display: flex;
+  flex-direction: column;
+}
+
+.line {
+  font-size: 0.9em;
+  margin-top: 0;
+  margin-left: 10px;
+}
+
+.a1-text {
+  color: red;
+}
+
+.due-text {
+  color: gray;
+}
+
+.red-icon{
+  color:red;
+}
+
+.gray-icon{
+  color:gray;
 }
