@@ -1,3 +1,4 @@
+
 /* Outer Flex Container styles */
 .flex-container {
   display: flex;
@@ -8,7 +9,8 @@
 
 .kanbas-nav,
 .course-nav,
-.course-settings-navigation {
+.course-modules,
+.course-buttons {
   flex-grow: 1;
   padding: 0;
   background-color: white;
@@ -76,12 +78,12 @@
 /* Course Navigation Sidebar styles */
 .course-nav .list-group {
   border-radius: 0;
-  background-color: white;
+  /* background-color: white; */
   list-style: none;
   padding: 0;
-  width: 200px;
+  width: 100px;
   margin: 0;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   font-family: Arial, sans-serif;
 }
 
@@ -118,6 +120,59 @@
 .course-nav .list-group-item.active,
 .course-nav .list-group-item.active a {
   color: black; /* Set text color to black for active item */
+}
+
+/* Course Button styles */
+.breadcrumb-item a {
+  text-decoration: none;
+  color: red;
+}
+
+.course-buttons .btn-primary {
+  background-color: lightgray;
+  color: black;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+  margin: 1px;
+}
+
+.course-buttons .btn-primary-long {
+  background-color: lightgray;
+  color: black;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+  margin: 1px;
+  width: 250px;
+  text-align: left;
+}
+
+.course-buttons .btn-secondary {
+  background-color: red;
+  color: white;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+  margin: 1px;
+}
+
+.course-buttons .btn-third {
+  background-color: #8bc34a;
+  color: white;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+  margin: 1px;
+}
+
+.course-buttons .btn-primary:hover,
+.course-buttons .btn-primary:focus,
+.course-buttons .btn-secondary:hover,
+.course-buttons .btn-secondary:focus {
+  background-color: lightgrey;
+  color: black;
+}
+
+.course-buttons .btn i.fas.fa-check-circle {
+  font-size: 1.2em;
+  margin-right: 5px;
 }
 
 
@@ -195,5 +250,29 @@
 }
 
 .course-settings-navigation .nav-tabs .nav-item .nav-link.active {
+  color: black;
+}
+
+
+/* Course Settings Tabs styles */
+.nav-tabs {
+  padding: 0; /* Set padding to 0 for the whole tab bar */
+}
+
+.nav-item {
+  margin: 0; /* Adjust the margin between tabs */
+}
+
+.nav-link {
+  color: red; /* Set the text color to red for inactive tabs */
+}
+
+.nav-link.active {
+  color: black; /* Set the text color to black for the active tab */
+}
+
+.nav-link.active,
+.nav-link:hover,
+.nav-link:focus {
   color: black;
 }

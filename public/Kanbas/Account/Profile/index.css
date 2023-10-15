@@ -22,9 +22,9 @@
 .kanbas-nav .list-group {
   background-color: black;
   list-style: none;
-  padding: 0px;
+  padding: 0;
   width: 80px;
-  margin: 0px;
+  margin: 0;
   font-family: Arial, sans-serif;
 }
 
@@ -76,12 +76,12 @@
 /* Account Navigation Sidebar styles */
 .account-navigation .list-group {
   border-radius: 0;
-  background-color: white;
+  /* background-color: white; */
   list-style: none;
   padding: 0;
-  width: 200px;
+  width: 180px;
   margin: 0;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   font-family: Arial, sans-serif;
 }
 
