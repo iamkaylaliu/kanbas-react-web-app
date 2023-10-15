@@ -12,7 +12,7 @@
   flex-grow: 1;
   padding: 0; 
   background-color: white; 
-  margin: 0 10px;
+  margin: 0 ;
   box-sizing: border-box;
 }
 
@@ -120,6 +120,7 @@
 .account-navigation .list-group-item.active a {
   color: black; /* Set text color to black for active item */
 }
+
 
 
 /* Edit Profile styles */

@@ -1,6 +1,6 @@
 
 /* Outer Flex Container styles */
-.container-fluid {
+.flex-container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -9,7 +9,8 @@
 
 .kanbas-nav,
 .course-nav,
-.assignments {
+.course-modules,
+.course-buttons {
   flex-grow: 1;
   padding: 0;
   background-color: white;
@@ -75,15 +76,14 @@
 
 
 /* Course Navigation Sidebar styles */
-
 .course-nav .list-group {
   border-radius: 0;
-  background-color: white;
+  /* background-color: white; */
   list-style: none;
   padding: 0;
-  width: 200px;
+  width: 100px;
   margin: 0;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   font-family: Arial, sans-serif;
 }
 
@@ -104,26 +104,28 @@
   text-decoration: none;
 }
 
-.course-nav .list-group-item:not(.active)+.list-group-item {
+.course-nav .list-group-item:not(.active) + .list-group-item {
   margin-top: 20px;
 }
 
-.course-nav .list-group-item a:hover,
-.course-nav .list-group-item a:focus {
-  color: black; /* Change text color to black on hover and focus */
-}
-
+/* Apply black text and border to the left when links are hovered or focused */
 .course-nav .list-group-item:hover,
 .course-nav .list-group-item:focus {
   background-color: white;
   border-left: 4px solid black;
   padding-left: 10px;
+  color: black; /* Set text color to black on hover and focus */
+}
+
+.course-nav .list-group-item.active,
+.course-nav .list-group-item.active a {
+  color: black; /* Set text color to black for active item */
 }
 
 
 /* Assignment styles */
 .assignments .list-group {
-  margin: 0 20px;
+  margin: 0;
 }
 
 .assignments .list-group-item-secondary {
@@ -208,6 +210,70 @@
   margin-right: 20px;
 }
 
-.assignments .list-group-item i.file-icon {
-  font-size: 22px
+.assignments .a1-text {
+  font-weight: bold;
+  color: black;
+}
+
+.assignments .due-text {
+  color: gray;
+  font-size: smaller;
+}
+
+.assignments .file-icon {
+  margin-right: 20px;
+}
+
+
+/* Course Button styles */
+.breadcrumb-item a {
+  text-decoration: none;
+  color: red;
+}
+
+.course-buttons .btn-primary {
+  background-color: lightgray;
+  color: black;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+  margin: 1px;
+}
+
+.course-buttons .btn-primary-long {
+  background-color: lightgray;
+  color: black;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+  margin: 1px;
+  width: 250px;
+  text-align: left;
+}
+
+.course-buttons .btn-secondary {
+  background-color: red;
+  color: white;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+  margin: 1px;
+}
+
+.course-buttons .btn-third {
+  background-color: #8bc34a;
+  color: white;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+  margin: 1px;
+}
+
+.course-buttons .btn-primary:hover,
+.course-buttons .btn-primary:focus,
+.course-buttons .btn-secondary:hover,
+.course-buttons .btn-secondary:focus {
+  background-color: lightgrey;
+  color: black;
+}
+
+.course-buttons .btn i.fas.fa-check-circle {
+  font-size: 1.2em;
+  margin-right: 5px;
 }
