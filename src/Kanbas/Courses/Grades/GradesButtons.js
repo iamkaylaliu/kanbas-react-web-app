@@ -6,19 +6,19 @@ function GradesButtons() {
         <>
             <div className="d-flex justify-content-end mb-3 course-buttons">
                 <div className="ml-2">
-                    <a href="#" className="btn btn-primary btn-equal-height">
+                    <button className="btn btn-primary btn-equal-height">
                         <FaDownload style={{ color: "black" }} /> Import
-                    </a>
+                    </button>
                 </div>
                 <div className="ml-2">
-                    <a href="#" className="btn btn-primary btn-equal-height">
+                    <button className="btn btn-primary btn-equal-height">
                         <FaUpload style={{ color: "black" }} /> Export
-                    </a>
+                    </button>
                 </div>
                 <div className="ml-2">
-                    <a href="#" className="btn btn-primary btn-lg btn-equal-height">
+                    <button className="btn btn-primary btn-lg btn-equal-height">
                         <FaCog style={{ color: "black" }} />
-                    </a>
+                    </button>
                 </div>
             </div>
 
@@ -51,9 +51,9 @@ function GradesButtons() {
                     </div>
                 </div>
                 <div className="course-buttons">
-                    <a href="#" className="btn btn-primary">
+                    <button className="btn btn-primary">
                         <FaFilter style={{ color: "black" }} /> Apply Filters
-                    </a>
+                    </button>
                 </div>
             </div>
             <hr />

@@ -20,44 +20,44 @@ function Status() {
             <div className="container">
                 <h4>Course Status</h4><br />
                 <div className="course-buttons">
-                    <a href="#" className="btn btn-primary">
+                    <button className="btn btn-primary">
                         {iconMap["unpublish"]} Unpublish
-                    </a>
+                    </button>
 
-                    <a href="#" className="btn btn-third">
+                    <button className="btn btn-third">
                         {iconMap["published"]} Published
-                    </a>
+                    </button>
                 </div>
 
                 {/* 7 long buttons */}
                 <div className="course-buttons">
-                    <a href="#" className="btn btn-primary-long">
+                    <button className="btn btn-primary-long">
                         {iconMap["import-existing"]} Import Existing Content
-                    </a>
+                    </button>
 
-                    <a href="#" className="btn btn-primary-long">
+                    <button className="btn btn-primary-long">
                         {iconMap["import-commons"]} Import from Commons
-                    </a>
+                    </button>
 
-                    <a href="#" className="btn btn-primary-long">
+                    <button className="btn btn-primary-long">
                         {iconMap["choose-home"]} Choose Home Page
-                    </a>
+                    </button>
 
-                    <a href="#" className="btn btn-primary-long">
+                    <button className="btn btn-primary-long">
                         {iconMap["view-stream"]} View Course Stream
-                    </a>
+                    </button>
 
-                    <a href="#" className="btn btn-primary-long">
+                    <button className="btn btn-primary-long">
                         {iconMap["new-announcement"]} New Announcement
-                    </a>
+                    </button>
 
-                    <a href="#" className="btn btn-primary-long">
+                    <button className="btn btn-primary-long">
                         {iconMap["new-analytics"]} New Analytics
-                    </a>
+                    </button>
 
-                    <a href="#" className="btn btn-primary-long">
+                    <button className="btn btn-primary-long">
                         {iconMap["view-notifications"]} View Course Notifications
-                    </a>
+                    </button>
                 </div><br />
 
                 <strong>To Do</strong>

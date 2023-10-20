@@ -12,15 +12,15 @@ function AssignmentButtons() {
                     style={{ width: "260px" }}
                 />
                 <div>
-                    <a href="#" className="btn btn-primary btn-equal-height ml-2">
+                    <button className="btn btn-primary btn-equal-height ml-2">
                         <FaPlus style={{ color: "black" }} /> Group
-                    </a>
-                    <a href="#" className="btn btn-danger btn-equal-height ml-2">
+                    </button>
+                    <button className="btn btn-danger btn-equal-height ml-2">
                         <FaPlus style={{ color: "white" }} /> Assignments
-                    </a>
-                    <a href="#" className="btn btn-primary btn-lg btn-equal-height ml-2">
+                    </button>
+                    <button className="btn btn-primary btn-lg btn-equal-height ml-2">
                         <FaEllipsisV style={{ color: "black" }} />
-                    </a>
+                    </button>
                 </div>
             </div>
             <hr />
