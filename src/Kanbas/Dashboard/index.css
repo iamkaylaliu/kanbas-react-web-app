@@ -1,0 +1,92 @@
+/* Dashboard Card styles */
+.card {
+    width: 100%;
+    max-width: 260px;
+    height: 260px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    font-family: Arial, sans-serif;
+    margin: 15px;
+}
+
+.card-image {
+    height: 60%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-bg-medium-blue {
+    background-color: #0074e4;
+}
+
+.card-bg-light-blue {
+    background-color: #4fc1e9;
+}
+
+.card-bg-very-light-blue {
+    background-color: #a0d3e8;
+}
+
+.card-title {
+    font-size: 0.9em;
+    color: #005f9f;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+
+.card-title-blue {
+    color: #0074e4;
+}
+
+.card-title-medium-blue {
+    color: #0074e4;
+}
+
+.card-title-light-blue {
+    color: #4fc1e9;
+}
+
+.card-title-very-light-blue {
+    color: #a0d3e8;
+}
+
+.card-term,
+.card-year {
+    font-size: 0.8em;
+    color: grey;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+
+.card-term {
+    font-size: 1em;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-body i {
+    font-size: 1.2em;
+    margin: 5px;
+    color: grey;
+}
+
+.courses-grid {
+    margin-left: 20px;
+}
+
+.h3-margin-left {
+    margin-left: 35px;
+}
