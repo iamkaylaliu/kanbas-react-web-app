@@ -15,9 +15,9 @@ function AssignmentButtons() {
                     <button className="btn btn-primary btn-equal-height ml-2">
                         <FaPlus style={{ color: "black" }} /> Group
                     </button>
-                    <button className="btn btn-danger btn-equal-height ml-2">
+                    {/* <button className="btn btn-danger btn-equal-height ml-2">
                         <FaPlus style={{ color: "white" }} /> Assignments
-                    </button>
+                    </button> */}
                     <button className="btn btn-primary btn-lg btn-equal-height ml-2">
                         <FaEllipsisV style={{ color: "black" }} />
                     </button>

@@ -23,14 +23,17 @@ function ModuleButtons() {
                     <BsCheckCircle style={{ color: 'green' }} /> Publish All
                 </button>
                 <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a className="dropdown-item" href="#">Action 1</a>
+                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a className="dropdown-item" href="#">Action 2</a>
+                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a className="dropdown-item" href="#">Action 3</a>
                 </div>
             </div>
-            <div className="ml-2">
+            {/* <div className="ml-2">
                 <button className="btn btn-danger btn-equal-height">+ Module</button>
-            </div>
+            </div> */}
             <div className="ml-2">
                 <button className="btn btn-primary btn-lg btn-equal-height">
                     <IoEllipsisVerticalSharp style={{ color: 'black' }} />

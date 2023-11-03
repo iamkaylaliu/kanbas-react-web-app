@@ -1,34 +1,85 @@
-import db from "../Database";
+import React from "react";
 import { Link } from "react-router-dom";
-// import { BsFileEarmarkText } from "react-icons/bs";
 import "./index.css";
-import backgroundImg from "./background.jpg";
 
-function Dashboard() {
-    const courses = db.courses;
+function Dashboard(
+    { courses, course, setCourse, addNewCourse,
+        deleteCourse, updateCourse }
+) {
 
     return (
-        <div>
+        <div style={{ marginLeft: "20px" }}>
             <h2>Dashboard</h2>
             <hr />
-            <h3 className="h3-margin-left">Published Courses ({courses.length})</h3>
+            <h3>Published Courses ({courses.length})</h3>
             <hr />
-            <div className="courses-grid d-flex flex-row flex-wrap">
-                {courses.map((course, index) => (
-                    <div className="card" style={{ maxWidth: '260px' }}>
-                        <div className="card-image" style={{ backgroundImage: `url(${backgroundImg})`, height: '150px' }}>
-
+            <div className="course-inputs">
+                <div>
+                    <input
+                        value={course.name}
+                        className="form-control"
+                        onChange={(e) => setCourse({ ...course, name: e.target.value })}
+                        placeholder="Course Name"
+                    />
+                </div>
+                <div>
+                    <input
+                        value={course.number}
+                        className="form-control"
+                        onChange={(e) => setCourse({ ...course, number: e.target.value })}
+                        placeholder="Course Number"
+                    />
+                </div>
+                <div>
+                    <input
+                        value={course.startDate}
+                        className="form-control"
+                        type="date"
+                        onChange={(e) => setCourse({ ...course, startDate: e.target.value })}
+                        placeholder="Start Date"
+                    />
+                </div>
+                <div>
+                    <input
+                        value={course.endDate}
+                        className="form-control"
+                        type="date"
+                        onChange={(e) => setCourse({ ...course, endDate: e.target.value })}
+                        placeholder="End Date"
+                    />
+                </div>
+                <button className="btn btn-success" onClick={addNewCourse}>
+                    Add
+                </button>
+                <button className="btn btn-primary" onClick={updateCourse}>
+                    Update
+                </button>
+            </div>
+            <div className="list-group">
+                {courses.map((c) => (
+                    <Link key={c._id} to={`/Kanbas/Courses/${c._id}`} className="list-group-item">
+                        <div className="course-item">
+                            <span>{c.name}</span>
+                            <div className="course-buttons">
+                                <button className="btn btn-warning"
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        setCourse(c);
+                                    }}
+                                >
+                                    Edit
+                                </button>
+                                <button className="btn btn-danger"
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        deleteCourse(c._id);
+                                    }}
+                                >
+                                    Delete
+                                </button>
+                            </div>
                         </div>
-                        <div className="card-body">
-                            <Link key={course._id} to={`/Kanbas/Courses/${course._id}`} className="no-underline">
-                                <h5 className="card-title">{course.name}</h5>
-                            </Link>
-                            <p className="card-term">{course.number}</p>
-                            <p className="card-year">{course.startDate}</p>
-                            <p className="card-year">{course.endDate}</p>
-                            {/* <BsFileEarmarkText className="icon" /> */}
-                        </div>
-                    </div>
+                    </Link>
                 ))}
             </div>
         </div>

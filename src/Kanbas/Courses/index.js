@@ -1,4 +1,3 @@
-import db from "../../Kanbas/Database";
 import { Navigate, Route, Routes, useParams, useLocation, Link } from 'react-router-dom';
 import CourseNavigation from './CourseNavigation';
 import Modules from './Modules';
@@ -9,9 +8,9 @@ import Grades from './Grades';
 import "./index.css";
 import { PiListDashesBold } from "react-icons/pi";
 
-function Courses() {
+function Courses({ courses }) {
     const { courseId } = useParams();
-    const course = db.courses.find((course) => course._id === courseId);
+    const course = courses.find((course) => course._id === courseId);
     const location = useLocation();
 
     const pathSegments = location.pathname.split('/').filter((segment) => segment !== '');
