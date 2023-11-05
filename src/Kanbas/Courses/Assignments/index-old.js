@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { deleteAssignment } from "./assignmentsReducer";
+import { deleteAssignment } from "./assignmentsReducer"; // Update your import
 import "./index.css";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 import { IoEllipsisVerticalSharp } from "react-icons/io5";
@@ -13,16 +13,19 @@ function Assignments() {
     const { courseId } = useParams();
     const assignments = useSelector((state) => state.assignmentsReducer.assignments);
     const dispatch = useDispatch();
-
     const courseAssignments = assignments.filter((assignment) => assignment.course === courseId);
-
+    const [assignmentToDelete, setAssignmentToDelete] = useState(null);
     const handleDeleteAssignment = (assignment) => {
+        // Display a confirmation dialog
         const confirmDelete = window.confirm("Are you sure you want to remove this assignment?");
 
         if (confirmDelete) {
+            // Delete the assignment and update the state
             dispatch(deleteAssignment(assignment._id));
+            setAssignmentToDelete(null); // Clear the assignment to be deleted
         }
     };
+
 
     return (
         <div>
@@ -64,9 +67,7 @@ function Assignments() {
                                 </div>
 
                                 <div className="icons">
-                                    <button
-                                        className="btn btn-danger"
-                                        style={{ marginRight: '10px' }}
+                                    <button className="btn btn-danger" style={{ marginRight: '10px' }}
                                         onClick={() => handleDeleteAssignment(assignment)}
                                     >
                                         Delete
