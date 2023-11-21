@@ -7,10 +7,29 @@ import AssignmentEditor from './Assignments/AssignmentEditor';
 import Grades from './Grades';
 import "./index.css";
 import { PiListDashesBold } from "react-icons/pi";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
-function Courses({ courses }) {
+
+function Courses() {
     const { courseId } = useParams();
-    const course = courses.find((course) => course._id === courseId);
+    const URL = "http://localhost:4000/api/courses";
+    const [course, setCourse] = useState({});
+
+    const findCourseById = async (courseId) => {
+        const response = await axios.get(
+            `${URL}/${courseId.$oid}`
+        );
+        setCourse(response.data);
+    };
+
+    useEffect(() => {
+        if (courseId && typeof courseId === 'object' && courseId.$oid) {
+            findCourseById(courseId);
+        }
+    }, [courseId]);
+
+    // const course = courses.find((course) => course._id === courseId);
     const location = useLocation();
 
     const pathSegments = location.pathname.split('/').filter((segment) => segment !== '');

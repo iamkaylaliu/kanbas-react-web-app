@@ -3,21 +3,27 @@ import KanbasNavigation from "./KanbasNavigation";
 import Courses from "./Courses";
 import Account from "./Account";
 import Dashboard from "./Dashboard";
-import db from "./Database";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import store from "./store";
 import { Provider } from "react-redux";
+import axios from "axios";
 
 function Kanbas() {
-   const [courses, setCourses] = useState(db.courses);
+   const [courses, setCourses] = useState([]);
    const [course, setCourse] = useState({
       name: "",
       number: "",
       startDate: "",
       endDate: "",
    });
+   const URL = "http://localhost:4000/api/courses";
+   // const URL = "http://kanbas-node-server-app-n6ef.onrender.com/api/courses";
+   const updateCourse = async () => {
+      const response = await axios.put(
+         `${URL}/${course._id}`,
+         course
+      );
 
-   const updateCourse = () => {
       setCourses(
          courses.map((c) => {
             if (c._id === course._id) {
@@ -27,21 +33,62 @@ function Kanbas() {
             }
          })
       );
+      setCourse({ name: "" });
+   };
+   const deleteCourse = async (courseId) => {
+      try {
+         await axios.delete(`${URL}/${courseId}`);
+         // If the deletion on the server is successful, update the state
+         setCourses(courses.filter((c) => c._id !== courseId));
+      } catch (error) {
+         // Handle any errors that occur during the deletion process
+         console.error('Error deleting course:', error);
+         // You might want to add additional error handling logic here
+      }
    };
 
-   const addNewCourse = () => {
+   const addCourse = async () => {
+      const response = await axios.post(URL, course);
       setCourses([
+         response.data,
          ...courses,
-         {
-            ...course,
-            _id: new Date().getTime(),
-         },
       ]);
+      setCourse({ name: "" });
    };
 
-   const deleteCourse = (courseId) => {
-      setCourses(courses.filter((c) => c._id !== courseId));
+   const findAllCourses = async () => {
+      const response = await axios.get(URL);
+      setCourses(response.data);
    };
+   useEffect(() => {
+      findAllCourses();
+   }, []);
+
+   // const updateCourse = () => {
+   //    setCourses(
+   //       courses.map((c) => {
+   //          if (c._id === course._id) {
+   //             return course;
+   //          } else {
+   //             return c;
+   //          }
+   //       })
+   //    );
+   // };
+
+   // const addCourse = () => {
+   //    setCourses([
+   //       ...courses,
+   //       {
+   //          ...course,
+   //          _id: new Date().getTime(),
+   //       },
+   //    ]);
+   // };
+
+   // const deleteCourse = (courseId) => {
+   //    setCourses(courses.filter((c) => c._id !== courseId));
+   // };
 
    return (
       <Provider store={store}>
@@ -56,7 +103,7 @@ function Kanbas() {
                         courses={courses}
                         course={course}
                         setCourse={setCourse}
-                        addNewCourse={addNewCourse}
+                        addNewCourse={addCourse}
                         deleteCourse={deleteCourse}
                         updateCourse={updateCourse} />
                   } />
