@@ -16,8 +16,10 @@ function Kanbas() {
       startDate: "",
       endDate: "",
    });
-   const URL = "http://localhost:4000/api/courses";
-   // const URL = "http://kanbas-node-server-app-n6ef.onrender.com/api/courses";
+   // const URL = "http://localhost:4000/api/courses";
+   const API_BASE = process.env.REACT_APP_API_BASE;
+   const URL = `${API_BASE}/courses`;
+
    const updateCourse = async () => {
       const response = await axios.put(
          `${URL}/${course._id}`,
