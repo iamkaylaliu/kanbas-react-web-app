@@ -1,16 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { deleteAssignment } from "./assignmentsReducer";
+import {
+    deleteAssignment,
+    setAssignments,
+} from "./assignmentsReducer";
+
 import "./index.css";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 import { IoEllipsisVerticalSharp } from "react-icons/io5";
 import { PiDotsSixVerticalBold } from "react-icons/pi";
 import { FaPlus } from "react-icons/fa";
 import AssignmentButtons from "./AssignmentButtons";
+import { findAssignmentsForCourse } from "./client";
 
 function Assignments() {
     const { courseId } = useParams();
+    useEffect(() => {
+        findAssignmentsForCourse(courseId)
+            .then((assignments) =>
+                dispatch(setAssignments(assignments))
+            );
+    }, [courseId]);
+
+
     const assignments = useSelector((state) => state.assignmentsReducer.assignments);
     const dispatch = useDispatch();
 

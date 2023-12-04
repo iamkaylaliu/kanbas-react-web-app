@@ -20,7 +20,7 @@ function Courses() {
 
     const findCourseById = async (courseId) => {
         const response = await axios.get(
-            `${URL}/${courseId.$oid}`
+            `${URL}/${courseId}`
         );
         setCourse(response.data);
     };
