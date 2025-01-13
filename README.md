@@ -1,6 +1,6 @@
 # **Kanbas - Frontend**
 
-**Kanbas** is a Learning Management System (LMS) inspired by Canvas, developed as part of the **CS5610 Web Development** course at Northeastern University. This repository contains the **frontend** of the application, built using **React** and **JavaScript**. The app is hosted on **Netlify**.
+**Kanbas** is a Learning Management System (LMS) inspired by Canvas, developed as part of the **CS5610 Web Development** course at Northeastern University. This repository contains the frontend of the application, built using React and JavaScript. The app is hosted on Netlify.
 
 For the **backend repository**, visit: [Backend Repository](https://github.com/iamkaylaliu/kanbas-node-server-app)  
 
